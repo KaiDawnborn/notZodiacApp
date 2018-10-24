@@ -1,0 +1,23 @@
+/* CSS = Cascading Stylesheets */
+
+/*
+CSS Selector {
+	property: value;
+}
+*/
+body {
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+}
+#interface input {
+	display: block;
+	margin: 10px auto;
+}
+.list-group {
+	padding: 0;
+}
+.types ul .list-group-item {
+	padding: 3px;
+	padding-left: 25px;
+	text-align: left;
+}

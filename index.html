@@ -1,0 +1,117 @@
+<!-- html = hypertext markup language -->
+<!DOCTYPE html>
+<!-- start html element -->
+<html>
+<!-- start head element -->
+	<head>
+		<title>Myers-Briggs Personality Types</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- fontawesome link -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<!-- animated css styles -->
+		<link rel="stylesheet" href="css/animate.css">
+		<!-- Bootstrap css styles -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!-- active css styles -->
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+<!-- start body element -->
+	<body>
+		
+		<div class="container my-3 bg-secondary">
+			<div class="row text-center">
+				<!-- The section a user will interact with -->
+				<section class="col-8 ml-5 bg-light mt-3 p-5 border rounded" id="interface">
+					<h1 class="display-4">The Myers-Briggs Personality Types</h1>
+					<p class="h4 mt-3">Which personality type are you interested in?</p>
+					<form class="mx-auto">
+						<input class="col-4 mt-4" type="text">
+						<button type="button" class="btn btn-outline-info col-3 mx-auto">Learn more!</button>
+					</form>
+				</section>
+				<!-- The section listing the personality types -->
+				<section class="types col-3 mt-3 border rounded bg-light">
+					<ul class="list-group my-3">
+						<li class="list-group-item">ISTJ - The Inspector</li>
+						<li class="list-group-item">INFJ - The Counselor</li>
+						<li class="list-group-item">INTJ - The Mastermind</li>
+						<li class="list-group-item">ENFJ - The Giver</li>
+						<li class="list-group-item">ISTP - The Craftsman</li>
+						<li class="list-group-item">ESFJ - The Provider</li>
+						<li class="list-group-item">INFP - The Idealist</li>
+						<li class="list-group-item">ESFP - The Performer</li>
+						<li class="list-group-item">ENFP - The Champion</li>
+						<li class="list-group-item">ESTP - The Doer</li>
+						<li class="list-group-item">ESTJ - The Supervisor</li>
+						<li class="list-group-item">ENTJ - The Commander</li>
+						<li class="list-group-item">INTP - The Thinker</li>
+						<li class="list-group-item">ISFJ - The Nurturer</li>
+						<li class="list-group-item">ENTP - The Visionary</li>
+						<li class="list-group-item">ISFP - The Composer</li>
+					</ul>
+				</section>
+				<!-- The section which will populate with information -->
+				<section class="col-11 bg-light mx-auto my-3 p-3">
+					<div class="container">
+						<div class="row">
+							<p class="h1 mt-3 col-12">placeholder type letters</p>
+							<p class="h4 mt-3 col-12">placeholder type title</p>
+							<section class="mt-5 col-4" id="type-qualities">
+								<p class="h4">Qualities of the xxxx</p>
+								<ul class="list-group">
+									<li class="list-group-item">placeholder quality</li>
+									<li class="list-group-item">placeholder quality</li>
+									<li class="list-group-item">placeholder quality</li>
+									<li class="list-group-item">placeholder quality</li>
+									<li class="list-group-item">placeholder quality</li>
+									<li class="list-group-item">placeholder quality</li>
+									<li class="list-group-item">placeholder quality</li>
+								</ul>
+							</section>
+							<section class="mt-5 col-8" id="type-summary">
+								<p class="h4">Summary</p>
+								<p class="h6 mt-3">placeholder summary</p>
+							</section>
+							<div class="container mt-3">
+								<div class="row justify-content-center">
+									<div class="col-1" id="letter1">
+										X
+									</div>
+									<div class="col-3 text-left" id="letter1summary">
+										asfasd
+									</div>
+									<div class="col-1" id="letter2">
+										X
+									</div>
+									<div class="col-3 text-left" id="letter2summary">
+										asfasd
+									</div>
+									<div class="w-100"></div>
+									<div class="col-1" id="letter3">
+										X
+									</div>
+									<div class="col-3 text-left" id="letter3summary">
+										asfasd
+									</div>
+									<div class="col-1" id="letter$">
+										X
+									</div>
+									<div class="col-3 text-left" id="letter4summary">
+										asfasd
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+<!-- Bootstrap scripts -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- js	 -->
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
