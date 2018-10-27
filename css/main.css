@@ -6,7 +6,7 @@ CSS Selector {
 }
 */
 body {
-	background-image: url(../img/background.jpg);
+	background-image: url(https://www.10wallpaper.com/wallpaper/1920x1080/1110/Design_Vector-Illustration_Design_Desktop_Wallpaper_1920x1080.jpg);
 	background-size: cover;
 	background-position: center;
 }
@@ -22,3 +22,9 @@ body {
 	padding-left: 25px;
 	text-align: left;
 }
+a {
+	color: darkblue;
+}
+#populate, #qList, #letter-sum {
+	display: none;
+} 
