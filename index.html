@@ -21,44 +21,49 @@
 		<div class="container my-3 bg-secondary border border-secondary rounded">
 	<div class="row text-center">
 		<!-- The section a user will interact with -->
-		<section class="col-8 ml-5 bg-light my-3 p-5 border rounded" id="interface">
+		<section class="col-12 col-lg-8 ml-auto ml-lg-5 bg-light my-3 py-sm-3 p-lg-5 border rounded" id="interface">
 			<h1 class="display-4">The Myers-Briggs Personality Types</h1>
 			<p class="h4 mt-3">Which personality type are you interested in?</p>
 			<form class="mx-auto">
 				<!-- input field "p-type" interacts with js --> 	
-				<input type="text" class="col-4 mt-4" id="p-type">
-				<button type="button" class="btn btn-outline-info col-3 mx-auto" onclick="getType()" id="vSubmit">Learn more!</button>
+				<input type="text" class="col-8 col-sm-6 col-lg-4 mt-4" id="p-type">
+				<button type="button" class="btn btn-outline-info col-6 col-sm-5 col-lg-3 mx-auto mb-3 p-0 p-md-3" onclick="getType()" id="vSubmit">Learn more!</button>
 			</form>
 		</section>
 		<!-- The section listing the personality types -->
-		<section class="types col-3 my-3 border rounded bg-light">
+		<section class="types col-12 col-lg-3 mb-3 my-lg-3 border rounded bg-light">
 			<ul class="list-group my-3">
-				<li class="list-group-item">ISTJ - The Inspector</li>
-				<li class="list-group-item">INFJ - The Counselor</li>
-				<li class="list-group-item">INTJ - The Mastermind</li>
-				<li class="list-group-item">ENFJ - The Giver</li>
-				<li class="list-group-item">ISTP - The Craftsman</li>
-				<li class="list-group-item">ESFJ - The Provider</li>
-				<li class="list-group-item">INFP - The Idealist</li>
-				<li class="list-group-item">ESFP - The Performer</li>
-				<li class="list-group-item">ENFP - The Champion</li>
-				<li class="list-group-item">ESTP - The Doer</li>
-				<li class="list-group-item">ESTJ - The Supervisor</li>
-				<li class="list-group-item">ENTJ - The Commander</li>
-				<li class="list-group-item">INTP - The Thinker</li>
-				<li class="list-group-item">ISFJ - The Nurturer</li>
-				<li class="list-group-item">ENTP - The Visionary</li>
-				<li class="list-group-item">ISFP - The Composer</li>
+				<li class="list-group-item p-sm-1 p-md-1 p-lg-3">ISTJ - The Inspector</li>
+				<li class="list-group-item p-sm-1 p-md-1 p-lg-3">INFJ - The Counselor</li>
+				<li class="list-group-item p-sm-1 p-md-1 p-lg-3">INTJ - The Mastermind</li>
+				<li class="list-group-item p-sm-1 p-md-1 p-lg-3">ENFJ - The Giver</li>
+				<li class="list-group-item p-sm-1 p-md-1 p-lg-3">ISTP - The Craftsman</li>
+				<li class="list-group-item p-sm-1 p-md-1 p-lg-3">ESFJ - The Provider</li>
+				<li class="list-group-item p-sm-1 p-md-1 p-lg-3">INFP - The Idealist</li>
+				<li class="list-group-item p-sm-1 p-md-1 p-lg-3">ESFP - The Performer</li>
+				<li class="list-group-item p-sm-1 p-md-1 p-lg-3">ENFP - The Champion</li>
+				<li class="list-group-item p-sm-1 p-md-1 p-lg-3">ESTP - The Doer</li>
+				<li class="list-group-item p-sm-1 p-md-1 p-lg-3">ESTJ - The Supervisor</li>
+				<li class="list-group-item p-sm-1 p-md-1 p-lg-3">ENTJ - The Commander</li>
+				<li class="list-group-item p-sm-1 p-md-1 p-lg-3">INTP - The Thinker</li>
+				<li class="list-group-item p-sm-1 p-md-1 p-lg-3">ISFJ - The Nurturer</li>
+				<li class="list-group-item p-sm-1 p-md-1 p-lg-3">ENTP - The Visionary</li>
+				<li class="list-group-item p-sm-1 p-md-1 p-lg-3">ISFP - The Composer</li>
 			</ul>
 		</section>
 		<!-- The section which will populate with information -->
 		<section class="col-11 bg-light mx-auto my-3 p-3 border rounded" id="populate">
 			<div class="container">
 				<div class="row">
+					<!-- type name -->
 					<p class="h1 mt-3 col-12" id="type"></p>
+					<!-- type title -->
 					<p class="h4 mt-3 col-12 clear" id="title"></p>
-					<section class="mt-5 col-4 clear" id="qualities">
+					<!-- type qualities -->
+					<section class="mt-5 col-lg-4 clear" id="qualities">
+						<!-- type quality header -->
 						<p class="h4 clear" id ="q-header"></p>
+						<!-- type quality list -->
 						<ul class="list-group clear" id = "qList">
 							<li class="list-group-item" id="q1"></li>
 							<li class="list-group-item" id="q2"></li>
@@ -69,32 +74,40 @@
 							<li class="list-group-item" id="q7"></li>
 						</ul>
 					</section>
-					<section class="mt-5 col-8 clear" id="summary">
+					<!-- type summary -->
+					<section class="mt-5 col-lg-8 clear" id="summary">
+						<!-- type summary title -->
 						<p class="h4" id="sum-title"></p>
+						<!-- type summary content -->
 						<p class="h6 mt-3" id="sum"></p>
 					</section>
+					<!-- letters definitions -->
 					<div class="container mt-3 clear" id="letter-sum">
 						<div class="row justify-content-center">
-							<!-- define each letter individually -->
+							<!-- letter 1 -->
 							<div class="col-1" id="letter1">
 								X
 							</div>
 							<div class="col-3 text-left" id="letter1summary">
 								asfasd
 							</div>
+							<!-- letter 2 -->
 							<div class="col-1" id="letter2">
 								X
 							</div>
 							<div class="col-3 text-left" id="letter2summary">
 								asfasd
 							</div>
+							<!-- empty space fill -->
 							<div class="w-100"></div>
+							<!-- letter 3 -->
 							<div class="col-1" id="letter3">
 								X
 							</div>
 							<div class="col-3 text-left" id="letter3summary">
 								asfasd
 							</div>
+							<!-- letter 4 -->
 							<div class="col-1" id="letter$">
 								X
 							</div>

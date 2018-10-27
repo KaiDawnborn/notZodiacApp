@@ -28,3 +28,7 @@ a {
 #populate, #qList, #letter-sum {
 	display: none;
 } 
+
+.btn {
+	padding: 5px;
+}
